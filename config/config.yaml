@@ -1,0 +1,25 @@
+artifacts_root: artifacts
+
+
+data_ingestion:
+  root_dir: artifacts/data_ingestion
+  source_URL: https://www.airlinequality.com/airline-reviews/british-airways
+  local_data_file: artifacts/data_ingestion/data.csv
+  pages: 10
+  page_size: 100
+
+
+
+data_transformation:
+  root_dir: artifacts/data_transformation
+  source_data_path: artifacts/data_ingestion/data.csv
+  local_data_path: artifacts/data_transformation/data-v1.0.csv
+  feature_for_new_feature: reviews
+  feature_split_string: Trip Verified
+  new_feature: verified
+
+
+data_analysis:
+  root_dir: artifacts/data_analysis
+  source_data_path: artifacts/data_transformation/data-v1.0.csv
+

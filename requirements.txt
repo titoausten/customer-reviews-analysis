@@ -1,0 +1,17 @@
+nltk
+pandas 
+notebook
+matplotlib
+python-box==6.0.2
+pyYAML
+tqdm
+ensure==1.0.2
+joblib
+types-PyYAML
+beautifulsoup4
+contractions
+requests
+wordcloud
+vaderSentiment
+dvc
+-e .
