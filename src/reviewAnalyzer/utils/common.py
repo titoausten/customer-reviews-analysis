@@ -3,7 +3,6 @@ import pandas as pd
 import sys
 import yaml
 from src.reviewAnalyzer import logger
-import joblib
 from ensure import ensure_annotations
 from box import ConfigBox
 from pathlib import Path
