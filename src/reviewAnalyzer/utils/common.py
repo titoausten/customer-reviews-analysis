@@ -79,7 +79,6 @@ def read_yaml(path_to_yaml: Path) -> ConfigBox:
         raise CustomException(e, sys)
     
 
-
 @ensure_annotations
 def create_directories(path_to_directories: list, verbose=True):
     """create list of directories
@@ -93,32 +92,6 @@ def create_directories(path_to_directories: list, verbose=True):
         if verbose:
             logger.info(f"created directory at: {path}")
 
-
-@ensure_annotations
-def save_bin(data: Any, path: Path):
-    """save binary file
-
-    Args:
-        data (Any): data to be saved as binary
-        path (Path): path to binary file
-    """
-    joblib.dump(value=data, filename=path)
-    logger.info(f"binary file saved at: {path}")
-
-
-@ensure_annotations
-def load_bin(path: Path) -> Any:
-    """load binary data
-
-    Args:
-        path (Path): path to binary file
-
-    Returns:
-        Any: object stored in the file
-    """
-    data = joblib.load(path)
-    logger.info(f"binary file loaded from: {path}")
-    return data
 
 @ensure_annotations
 def get_size(path: Path) -> str:
