@@ -21,7 +21,7 @@ pip install -r requirements.txt
 python main.py
 ```
 
-### Data Analysis figures would be save in arttifacts/data_analysis
+### Data Analysis figures would be saved at artifacts/data_analysis
 
 ## License
 This project is licensed under the MIT License. See the LICENSE file for more details.
