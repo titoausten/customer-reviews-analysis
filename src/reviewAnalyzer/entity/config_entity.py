@@ -25,3 +25,4 @@ class DataTransformationConfig:
 class DataAnalysisConfig:
     root_dir: Path
     source_data_path: str
+
